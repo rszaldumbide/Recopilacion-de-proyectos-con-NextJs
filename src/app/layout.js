@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body>
         <Navbar />
-        <main className="container my-3 justify-center p-10 mx-auto ">
+        <main className="container my-3 justify-center p-10 mx-auto min-h-screen" >
           {children}
         </main>
       </body>
