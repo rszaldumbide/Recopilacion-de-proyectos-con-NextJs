@@ -22,7 +22,7 @@ function Proyecto1() {
           <div>
             <Testimonio
               nombre="Cristhian Recalde"
-              pais="Ecuador-Ibarra"
+              pais="Ecuador - Ibarra"
               cargo="Ingeniero "
               empresa="Tecnologías de la Información"
               testimonio={
@@ -50,7 +50,7 @@ function Proyecto1() {
           </div>
           <Testimonio
             nombre="Orlidan Montesdeoca"
-            pais="Ecuador-Ibarra"
+            pais="Ecuador - Ibarra"
             cargo="Ingeniero "
             empresa="Tecnologías de la Información"
             testimonio={
@@ -74,8 +74,8 @@ function Proyecto1() {
             />
           </div>
           <Testimonio
-            nombre="Cristhian Recalde"
-            pais="Ecuador-Ibarra"
+            nombre="Ricardo Zaldumbide"
+            pais="Ecuador - Otavalo"
             cargo="Ingeniero "
             empresa="Tecnologías de la Información"
             testimonio={

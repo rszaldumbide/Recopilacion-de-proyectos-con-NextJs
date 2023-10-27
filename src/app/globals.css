@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-.section{
-    font-family: 'Lato' , sans-serif;
+.section {
+    font-family: Lato, sans-serif;
+}
+
+h1 {
+    max-width: 940px;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 40px 0;
+}
+
+button {
+    width: 150px;
+    height: 60px;
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.boton-clic {
+    background-color: #0041ff;
+}
+
+.boton-clic:hover {
+    background-color: #002ead;
+    transition: 0.3 ease;
+}
+
+.boton-reiniciar {
+    background-color: #c70000;
+}
+
+.boton-reiniciar:hover {
+    background-color: #a70101;
+    transition: 0.3 ease;
 }

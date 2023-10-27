@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body>
         <Navbar />
-        <main className="container my-3 justify-center p-10 mx-auto min-h-screen" >
+        <main className="container justify-center p-10 mx-auto" >
           {children}
         </main>
       </body>
