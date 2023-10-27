@@ -1,0 +1,143 @@
+/* Estilos base */
+.contenedor-tareas {
+    width: 60%;
+    min-height: 500px;
+    background-color: #d0d0d5;
+    padding: 35px;
+    border-radius: 25px;
+  }
+  
+  .tarea-contenedor {
+    width: 95%;
+    min-height: 65px;
+    background-color: #1b1b32;
+    margin: 5px 0;
+    padding: 8px 15px 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1px solid white;
+    cursor: pointer;
+    color: white;
+    border-radius: 15px;
+  }
+  
+  /* Colores */
+  .tarea-contenedor:nth-child(4n + 1) {
+    background-color: #1b1b32;
+  }
+  
+  .tarea-contenedor:nth-child(4n + 2) {
+    background-color: #2a2a40;
+  }
+  
+  .tarea-contenedor:nth-child(4n + 3) {
+    background-color: #3b3b4f;
+  }
+  
+  .tarea-contenedor:nth-child(4n + 4) {
+    background-color: #fff;
+    color: #1b1b32;
+  }
+  
+  /* Texto */
+  .tarea-texto {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    overflow-wrap: anywhere;
+  }
+  
+  /* Icono */
+  .tarea-icono {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+  }
+  
+  /* Tarea completada */
+  .tarea-contenedor.completada {
+    background-color: #5a01a7;
+    text-decoration: line-through;
+    color: white;
+  }
+  
+  /* Estructura inicial de las tareas */
+  .tarea-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tarea-input {
+    width: 80%;
+    font-size: 18px;
+    background-color: white;
+    padding: 14px 32px 14px 16px;
+    border-radius: 15px;
+    border: 2px solid #00471b;
+    outline: none;
+  }
+  
+  /* Botón agregar tarea */
+  .tarea-boton {
+    padding: 16px;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    background-color: #00471b;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    width: auto;
+  }
+  
+  /* Lista de tareas contenedor */
+  .tareas-lista-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  /* Estilos para dispositivos móviles y tabletas (Media Queries) */
+  
+  /* Para tabletas (puedes ajustar los valores según tus necesidades) */
+  @media (max-width: 768px) {
+    .contenedor-tareas {
+      width: 90%;
+    }
+  
+    .tarea-contenedor {
+      width: 90%;
+    }
+  
+    .tarea-input {
+      width: 80%;
+    }
+  }
+  
+  /* Para dispositivos móviles (puedes ajustar los valores según tus necesidades) */
+  @media (max-width: 480px) {
+    .contenedor-tareas {
+      width: 100%;
+      padding: 10px;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  
+    .tarea-contenedor {
+      width: 100%;
+      padding: 8px;
+    }
+  
+    .tarea-input {
+      width: 100%;
+    }
+  }
+  

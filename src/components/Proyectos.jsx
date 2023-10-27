@@ -21,7 +21,7 @@ function Proyectos() {
         <Articulo 
         enlace="proyecto_4"
         titulo="Proyecto 4"
-        texto="Lista de tareas con funcionalidad de agregar, eliminar y marcar como completada."
+        texto="Lista de tareas con funcionalidades de agregar, eliminar y marcar como completada."
         />
     </div>
   );

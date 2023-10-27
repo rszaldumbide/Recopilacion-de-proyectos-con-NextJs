@@ -18,7 +18,7 @@ export default function Navbar() {
             <div className="flex space-x-4">
               <Link
                 href="/"
-                className="bg-orange-300 text-bg-gray-800 rounded-md mx-auto px-3 py-2 text-sm font-medium"
+                className="bg-orange-300 text-bg-gray-800 rounded-md mx-auto px-3 py-2 text-sm leading-5"
                 aria-current="page"
               >
                 Proyectos
@@ -33,7 +33,7 @@ export default function Navbar() {
           {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
           <Link
             href="/"
-            class="bg-orange-300 text-bg-gray-800 text-center w-auto block rounded-md px-3 py-2 text-base font-medium"
+            className="bg-orange-300 text-bg-gray-800 text-center w-auto block rounded-md px-3 py-2 text-base font-medium"
             aria-current="page"
           >
             Proyectos

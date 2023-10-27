@@ -24,7 +24,7 @@ export default function Proyecto2() {
   return (
     <div className="flex flex-wrap items-center justify-center text-center">
       <div className="items-center justify-center lg:min-w-[400px] lg:h-[550px]">
-        <h1>Contador de clics</h1>
+        <h1>Contador de clicks</h1>
         <div className="min-w-[300px] h-[300px] text-[160px] p-6 bg-slate-900 text-cyan-100 flex items-center justify-center mb-2 border-solid border-[9px] border-cyan-200 rounded-3xl cursor-none select-none">
           {contadorClics}
         </div>
