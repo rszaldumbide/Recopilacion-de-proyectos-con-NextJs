@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Logo from "@/assets/imgs/logo.png";
 
 export default function Navbar() {
   return (
@@ -9,7 +10,7 @@ export default function Navbar() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
               <Link href="/">
-                <Image src="/logo.png" alt="Logo" width={100} height={40} />
+                <Image src={Logo} alt="Logo" width={100} height={40} />
               </Link>
             </div>
           </div>
