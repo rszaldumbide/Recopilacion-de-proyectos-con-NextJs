@@ -8,8 +8,8 @@ function Proyecto1() {
   return (
     <div className="flex flex-wrap items-center justify-center text-center min-h-screen">
       <div className=" items-center justify-center min-[600px]">
-        <h1 className="leading-snug my-10 mx-0 font-bold text-4xl">
-          Información de los miembros de Webcats:
+        <h1 className="leading-snug my-10 mx-auto font-bold text-4xl text-center">
+          Descripción personal de los miembros de Webcats:
         </h1>
         <div className="xl:flex lg:flex items-center justify-center mx-auto mt-12 mb-3 bg-white shadow-2xl xl:w-[1170px] lg:w-[1170px] sm:w-[700px] md:w-[700px]">
           <div className="w-auto h-full">

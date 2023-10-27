@@ -6,7 +6,7 @@ function Proyectos() {
         <Articulo 
         enlace="proyecto_1"
         titulo="Proyecto 1"
-        texto="Replicación de la página de testimonios de FreecodeCamp."
+        texto="Descripción personal de cada uno de los participantes de Webcats."
         />
         <Articulo 
         enlace="proyecto_2"
