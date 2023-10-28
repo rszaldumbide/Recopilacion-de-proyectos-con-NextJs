@@ -6,7 +6,7 @@ import TestimonioCris from "@/assets/imgs/testimonio_Gris.jpg";
 
 function Proyecto1() {
   return (
-    <div className="flex flex-wrap items-center justify-center text-center min-h-screen">
+    <div className="mx-5 flex flex-wrap items-center justify-center text-center min-h-screen">
       <div className=" items-center justify-center min-[600px]">
         <h1 className="leading-snug my-10 mx-auto font-bold text-4xl text-center">
           Descripción personal de los miembros de Webcats:
@@ -80,10 +80,10 @@ function Proyecto1() {
             empresa="Tecnologías de la Información"
             testimonio={
               <>
-                Soy un joven apasionado por la programación
-                y la electrónica. Mi orgullo radica en mi capacidad para
-                perseguir objetivos con tenacidad y habilidad para colaborar
-                eficazmente con otros desarrolladores.
+                Soy un joven apasionado por la programación y la electrónica. Mi
+                orgullo radica en mi capacidad para perseguir objetivos con
+                tenacidad y habilidad para colaborar eficazmente con otros
+                desarrolladores.
               </>
             }
           />

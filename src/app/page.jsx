@@ -1,5 +1,5 @@
-import Cabecera from "@/components/Cabecera";
-import Proyectos from "@/components/Proyectos";
+import Cabecera from "@/components/Main/Cabecera";
+import Proyectos from "@/components/Main/Proyectos";
 
 export default function HomePage() {
   return (

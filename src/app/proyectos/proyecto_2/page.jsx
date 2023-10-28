@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Boton from "@/components/BotonClics";
+import { Button } from "@nextui-org/react";
 
 export default function Proyecto2() {
   const [contadorClics, setContadorClics] = React.useState(0);
@@ -22,27 +22,43 @@ export default function Proyecto2() {
   };
 
   return (
-    <div className="flex flex-wrap items-center justify-center text-center">
+    <div className="my-5 flex flex-wrap items-center justify-center text-center">
       <div className="items-center justify-center lg:min-w-[400px] lg:h-[550px]">
-        <h1>Contador de clicks</h1>
-        <div className="min-w-[300px] h-[300px] text-[160px] p-6 bg-slate-900 text-cyan-100 flex items-center justify-center mb-2 border-solid border-[9px] border-cyan-200 rounded-3xl cursor-none select-none">
+        <h1 className="leading-snug my-10 mx-auto font-bold text-4xl text-center">
+          Contador de clicks
+        </h1>
+        <div className="mx-3  min-w-[300px] h-[300px] text-[160px] p-6 bg-slate-900 text-cyan-100 flex items-center justify-center mb-2 border-solid border-[9px] border-cyan-200 rounded-3xl cursor-none select-none">
           {contadorClics}
         </div>
-        <Boton
-          texto="Aumentar"
-          estadoBoton={true}
-          manejarClic={aumentarContador}
-        />
-        <Boton
-          texto="Disminuir"
-          estadoBoton={true}
-          manejarClic={reducirContador}
-        />
-        <Boton
-          texto="Reiniciar"
-          estadoBoton={false}
-          manejarClic={reiniciarContador}
-        />
+        <div className="mx-3  flex flex-wrap items-center justify-center text-center">
+          <Button
+            className="m-1 bg-slate-800 text-white font-semibold"
+            radius="lg"
+            size="lg"
+            variant="shadow"
+            onClick={aumentarContador}
+          >
+            Aumentar
+          </Button>
+          <Button
+            className="m-1 bg-slate-800 text-white font-semibold"
+            radius="lg"
+            size="lg"
+            variant="shadow"
+            onClick={reducirContador}
+          >
+            Disminuir
+          </Button>
+          <Button
+            className="m-1 bg-red-600 text-white font-semibold"
+            radius="lg"
+            size="lg"
+            variant="shadow"
+            onClick={reiniciarContador}
+          >
+            Reiniciar
+          </Button>
+        </div>
       </div>
     </div>
   );

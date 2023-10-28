@@ -3,7 +3,7 @@ import Link from "next/link";
 function Articulo(props) {
   return (
     <Link href={`./proyectos/${props.enlace}`} >
-      <article className="block bg-slate-800 p-5 rounded-lg shadow-md">
+      <article className="block bg-slate-800 p-3 rounded-lg shadow-md mx-5">
         <div className="group relative">
           <h3 className="mt-3 text-2xl text-center font-semibold leading-6 text-orange-500 ">
             {props.titulo}
