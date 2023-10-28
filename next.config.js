@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = { output: 'export' }; 
+const nextConfig = { output: "export" };
 /* modo producción en linea */
 /* const nextConfig = {}; */
 /* modo desarrollador en local*/
