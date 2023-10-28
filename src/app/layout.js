@@ -1,6 +1,6 @@
 /* import { Providers } from "./providers"; */
 import "./globals.css";
-import NavbarMenu from "@/components/Navbar/Nav";
+/* import NavbarMenu from "@/components/Navbar/Nav"; */
 
 export const metadata = {
   title: "Proyecto de NextJs con ejercicios de React",
@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" >
       <body >
-        <NavbarMenu />
+        {/* <NavbarMenu /> */}
         {children}
       </body>
     </html>
