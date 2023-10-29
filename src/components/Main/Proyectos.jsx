@@ -2,7 +2,7 @@ import Articulo from "@/components/Main/P_Articulo";
 
 function Proyectos() {
   return (
-    <div class="mx-auto grid grid-cols-1 gap-x-16 xl:px-40 gap-y-16 border-gray-200 sm:mt-16 sm:pt-16 lg:mx-0 lg:grid-cols-2 mt-16 lg:mt-[-10px]">
+    <div className="mx-auto grid grid-cols-1 gap-x-16 xl:px-40 gap-y-16 border-gray-200 sm:mt-16 sm:pt-16 lg:mx-0 lg:grid-cols-2 mt-16 lg:mt-[-10px]">
         <Articulo 
         enlace="proyecto_1"
         titulo="Participantes de Webcats"
