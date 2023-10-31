@@ -30,11 +30,14 @@ export const TaskProvider = ({ children }) => {
     },
   ]);
 
+  const deleteTask = (id) =>
+    setTasks([...tasks.filter((task) => task.id !== id)]);
+
   const createTask = (title, description) =>
     setTasks([...tasks, { id: uuidv4(), title, description }]);
 
   return (
-    <TasksContext.Provider value={{ tasks, createTask }}>
+    <TasksContext.Provider value={{ tasks, createTask, deleteTask }}>
       {children}
     </TasksContext.Provider>
   );
