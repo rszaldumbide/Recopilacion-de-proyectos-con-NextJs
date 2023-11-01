@@ -48,7 +48,7 @@ export default function Nav() {
     >
       <NavbarContent>
         <NavbarBrand>
-          <Link href="Recopilacion-de-proyectos-con-NextJs/">
+          <Link href="/Recopilacion-de-proyectos-con-NextJs/">
             <Image src={Logo} alt="Logo" width={100} />
           </Link>
         </NavbarBrand>
@@ -60,7 +60,7 @@ export default function Nav() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem className="">
-          <Link className="hover:text-orange-500 text-white" href="/">
+          <Link className="hover:text-orange-500 text-white" href="/Recopilacion-de-proyectos-con-NextJs/">
             Inicio
           </Link>
         </NavbarItem>
@@ -83,12 +83,12 @@ export default function Nav() {
               key="Webcats"
               description="Descripción personal de los miembros de Webcats."
               startContent={icons.Users}
-              href="./proyectos/proyecto_1"
+              href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_1"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="./proyectos/proyecto_1"
+                href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_1"
               >
                 Webcats
               </Link>
@@ -97,12 +97,12 @@ export default function Nav() {
               key="Contador"
               description="Contador de Clicks, con botones de incremento, decremento y reiniciar."
               startContent={icons.Cursor}
-              href="./proyectos/proyecto_2"
+              href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_2"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="./proyectos/proyecto_2"
+                href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_2"
               >
                 Contador
               </Link>
@@ -111,12 +111,12 @@ export default function Nav() {
               key="Calculadora"
               description="Simulación de una calculadora de operaciones básicas."
               startContent={icons.Calculadora}
-              href="./proyectos/proyecto_3"
+              href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_3"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="./proyectos/proyecto_3"
+                href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_3"
               >
                 Calculadora
               </Link>
@@ -125,12 +125,12 @@ export default function Nav() {
               key="Lista"
               description="Lista de tareas con funcionalidades de agregar, eliminar y marcar como completada."
               startContent={icons.Lista1}
-              href="./proyectos/proyecto_4"
+              href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_4"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="./proyectos/proyecto_4"
+                href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_4"
               >
                 Lista
               </Link>
@@ -140,7 +140,7 @@ export default function Nav() {
       </NavbarContent>
       <NavbarMenu>
         <NavbarItem className="mt-10">
-          <Link color="foreground" className="hover:text-orange-500" href="/">
+          <Link color="foreground" className="hover:text-orange-500" href="/Recopilacion-de-proyectos-con-NextJs/">
             Inicio
           </Link>
         </NavbarItem>
@@ -169,12 +169,12 @@ export default function Nav() {
               key="Webcats"
               description="Descripción personal de los miembros de Webcats."
               startContent={icons.Users}
-              href="./proyectos/proyecto_1"
+              href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_1"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="./proyectos/proyecto_1"
+                href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_1"
               >
                 Webcats
               </Link>
@@ -183,12 +183,12 @@ export default function Nav() {
               key="Contador"
               description="Contador de Clicks, con botones de incremento, decremento y reiniciar."
               startContent={icons.Cursor}
-              href="./proyectos/proyecto_2"
+              href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_2"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="./proyectos/proyecto_2"
+                href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_2"
               >
                 Contador
               </Link>
@@ -197,12 +197,12 @@ export default function Nav() {
               key="Calculadora"
               description="Simulación de una calculadora de operaciones básicas."
               startContent={icons.Calculadora}
-              href="./proyectos/proyecto_3"
+              href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_3"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="./proyectos/proyecto_3"
+                href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_3"
               >
                 Calculadora
               </Link>
@@ -211,12 +211,12 @@ export default function Nav() {
               key="Lista"
               description="Lista de tareas con funcionalidades de agregar, eliminar y marcar como completada."
               startContent={icons.Lista1}
-              href="./proyectos/proyecto_4"
+              href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_4"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="./proyectos/proyecto_4"
+                href="/Recopilacion-de-proyectos-con-NextJs/proyectos/proyecto_4"
               >
                 Lista
               </Link>
