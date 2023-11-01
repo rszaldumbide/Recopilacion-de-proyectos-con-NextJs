@@ -1,20 +1,23 @@
-import React from "react";
 import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   Divider,
   Button,
-  Link,
   Checkbox,
+  Modal,
+  useDisclosure,
 } from "@nextui-org/react";
+
 import { AiFillEdit, AiTwotoneDelete } from "react-icons/ai";
 import Swal from "sweetalert2";
+import ModalEdit from "@/components/Tareas/ModalEdit";
 
 import { useTasks } from "@/context/TasksContext";
 
 export const CardTask = ({ task }) => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   const { deleteTask } = useTasks();
 
   return (
@@ -37,17 +40,24 @@ export const CardTask = ({ task }) => {
           </Checkbox>
           <div className=" flex justify-end h-10">
             <Divider orientation="vertical" className="bg-slate-800" />
-            <Link href="">
-              <Button
-                color="warning"
-                aria-label="Editar"
-                isIconOnly
-                className="mx-2 ml-4 text-warning"
-                variant="ghost"
-              >
-                <AiFillEdit size={25} radius={"full"} />
-              </Button>
-            </Link>
+            <Button
+              color="warning"
+              aria-label="Editar"
+              isIconOnly
+              className="mx-2 ml-4 text-warning"
+              variant="ghost"
+              onPress={onOpen}
+            >
+              <AiFillEdit size={25} radius={"full"} />
+            </Button>
+            <Modal
+              backdrop="blur"
+              isOpen={isOpen}
+              onOpenChange={onOpenChange}
+              placement="center"
+            >
+              <ModalEdit data={{task}} />
+            </Modal>
 
             <Button
               onClick={(e) => {

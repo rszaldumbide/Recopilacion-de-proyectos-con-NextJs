@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
-/* const nextConfig = { output: "export" }; */
+const nextConfig = { output: "export" };
 /* modo producción en linea */
-const nextConfig = {};
+/* const nextConfig = {}; */
 /* modo desarrollador en local*/
-module.exports = nextConfig;
+
+export default nextConfig;
