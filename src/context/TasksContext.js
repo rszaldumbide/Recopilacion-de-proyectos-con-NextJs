@@ -14,19 +14,9 @@ export const useTasks = () => {
 export const TaskProvider = ({ children }) => {
   const [tasks, setTasks] = useState([
     {
-      id: 1,
-      title: "Tarea 1",
-      description: "Descripcion de la tarea 1",
-    },
-    {
-      id: 2,
-      title: "Tarea 2",
-      description: "Descripcion de la tarea 2",
-    },
-    {
-      id: 3,
-      title: "Tarea 3",
-      description: "Descripcion de la tarea 3",
+      id: "1",
+      title: "Tarea de prueba 1",
+      description: "Descripción de la tarea de prueba 1",
     },
   ]);
 

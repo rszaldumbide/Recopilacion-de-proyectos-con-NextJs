@@ -7,43 +7,71 @@ import {
   Divider,
   Button,
   Link,
+  Checkbox,
 } from "@nextui-org/react";
-import { useTasks } from "@/context/TasksContext";
+import { AiFillEdit, AiTwotoneDelete } from "react-icons/ai";
+import Swal from "sweetalert2";
 
-import { TiDelete, TiEdit } from "react-icons/ti";
+import { useTasks } from "@/context/TasksContext";
 
 export const CardTask = ({ task }) => {
   const { deleteTask } = useTasks();
 
   return (
-    <Card className="my-5">
-      <CardHeader className="justify-center">
+    <Card className="max-w-3xl mx-auto my-10 shadow-xl text-white">
+      <CardHeader className="justify-center bg-slate-700">
         <h2 className="text-2xl font-semibold">{task.title}</h2>
       </CardHeader>
-      <CardBody className="flex gap-3">
-        <div className="flex justify-between">
-          <div>
-            <p>{task.description}</p>
-          </div>
+      <Divider className="bg-white" />
+      <CardBody className="bg-white">
+        <div className="flex items-center justify-between space-x-4">
+          <Checkbox
+            defaultSelected={false}
+            lineThrough
+            size="lg"
+            color="success"
+          >
+            <p className="text-gray-500 text-justify break-words">
+              {task.description}
+            </p>
+          </Checkbox>
+          <div className=" flex justify-end h-10">
+            <Divider orientation="vertical" className="bg-slate-800" />
+            <Link href="">
+              <Button
+                color="warning"
+                aria-label="Editar"
+                isIconOnly
+                className="mx-2 ml-4 text-warning"
+                variant="ghost"
+              >
+                <AiFillEdit size={25} radius={"full"} />
+              </Button>
+            </Link>
 
-          <div className="px-5">
             <Button
-              onClick={() => deleteTask(task.id)}
-              color="warning"
-              className="text-default-900/60 data-[hover]:bg-foreground/10 -translate-y-2 translate-x-2"
-                radius="full"
-                variant="light"
-              aria-label="Editar"
-            >
-              <TiEdit size={25} radius={"full"} />
-            </Button>
-            <Button
-              onClick={() => deleteTask(task.id)}
+              onClick={(e) => {
+                Swal.fire({
+                  title: "Estas seguro de eliminar esta tarea?",
+                  icon: "warning",
+                  showCancelButton: true,
+                  confirmButtonColor: "#d33",
+                  cancelButtonColor: "#3085d6",
+                  cancelButtonText: "Cancelar",
+                  confirmButtonText: "¡Sí!, Borralo",
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    deleteTask(task.id);
+                  }
+                });
+              }}
               color="danger"
               isIconOnly
               aria-label="Eliminar"
+              className="text-danger"
+              variant="ghost"
             >
-              <TiDelete size={25} radius={'full'} />
+              <AiTwotoneDelete size={25} radius={"full"} />
             </Button>
           </div>
         </div>

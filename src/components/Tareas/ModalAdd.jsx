@@ -10,24 +10,27 @@ import {
   Input,
   Textarea,
 } from "@nextui-org/react";
-import { useState } from "react";
+import { CiSearch } from "react-icons/ci";
+import { IoMdAdd } from "react-icons/io";
+/* hooks */
+import { useState, useEffect } from "react";
 import { useTasks } from "@/context/TasksContext";
 import { useRouter } from "next/navigation";
 
-export default function ModalAdd() {
+export default function ModalAdd({ params }) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-  const [tasks, setTasks] = useState();
+  const [tasks, setTasks] = useState({ title: "", descripcion: "" });
   const { createTask } = useTasks();
   const router = useRouter();
-
+  /* para saber si hay algun eefecto en el input */
   const handleChange = (e) => {
     setTasks({
       ...tasks,
       [e.target.name]: e.target.value,
     });
   };
-
+  /* cuando se da el evento crea la tarea con los parametros que esta y redirige a la misma pagina */
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(tasks);
@@ -35,11 +38,27 @@ export default function ModalAdd() {
     router.push("/proyectos/proyecto_4");
   };
 
+
   return (
     <div className="text-center my-5">
-      <Button onPress={onOpen} size="lg">
-        Agregar Tarea
-      </Button>
+      <div className="max-w-3xl mx-auto flex justify-between gap-3 items-end">
+        <Input
+          isClearable
+          className="w-full sm:max-w-[44%] "
+          placeholder="Search by name..."
+          startContent={<CiSearch />}
+          color="primary"
+        />
+        <div className="flex gap-3">
+          <Button
+            onPress={onOpen}
+            className="bg-[#015B7E] text-white"
+            endContent={<IoMdAdd />}
+          >
+            Agregar Tarea
+          </Button>
+        </div>
+      </div>
       <Modal
         backdrop="blur"
         isOpen={isOpen}
@@ -64,6 +83,7 @@ export default function ModalAdd() {
                   className="mt-2"
                   name="title"
                   onChange={handleChange}
+                  value={tasks.title}
                 />
                 <Textarea
                   label="Description"
@@ -74,6 +94,7 @@ export default function ModalAdd() {
                   minRows={1}
                   name="descripcion"
                   onChange={handleChange}
+                  value={tasks.descripcion}
                 />
               </ModalBody>
               <ModalFooter>
