@@ -40,10 +40,15 @@ export default function Nav() {
   };
 
   return (
-    <Navbar shouldHideOnScroll isBordered onMenuOpenChange={setIsMenuOpen} className="bg-slate-900 py-3">
+    <Navbar
+      shouldHideOnScroll
+      isBordered
+      onMenuOpenChange={setIsMenuOpen}
+      className="bg-slate-900 py-3"
+    >
       <NavbarContent>
         <NavbarBrand>
-          <Link href="/">
+          <Link href="Recopilacion-de-proyectos-con-NextJs/">
             <Image src={Logo} alt="Logo" width={100} />
           </Link>
         </NavbarBrand>
@@ -62,9 +67,7 @@ export default function Nav() {
         <Dropdown>
           <NavbarItem>
             <DropdownTrigger>
-              <Link
-                className="hover:text-orange-500 cursor-pointer  text-white"
-              >
+              <Link className="hover:text-orange-500 cursor-pointer  text-white">
                 Proyectos {icons.Down}
               </Link>
             </DropdownTrigger>
@@ -80,12 +83,12 @@ export default function Nav() {
               key="Webcats"
               description="Descripción personal de los miembros de Webcats."
               startContent={icons.Users}
-              href="/proyectos/proyecto_1"
+              href="./proyectos/proyecto_1"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="/proyectos/proyecto_1"
+                href="./proyectos/proyecto_1"
               >
                 Webcats
               </Link>
@@ -94,12 +97,12 @@ export default function Nav() {
               key="Contador"
               description="Contador de Clicks, con botones de incremento, decremento y reiniciar."
               startContent={icons.Cursor}
-              href="/proyectos/proyecto_2"
+              href="./proyectos/proyecto_2"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="/proyectos/proyecto_2"
+                href="./proyectos/proyecto_2"
               >
                 Contador
               </Link>
@@ -108,12 +111,12 @@ export default function Nav() {
               key="Calculadora"
               description="Simulación de una calculadora de operaciones básicas."
               startContent={icons.Calculadora}
-              href="/proyectos/proyecto_3"
+              href="./proyectos/proyecto_3"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="/proyectos/proyecto_3"
+                href="./proyectos/proyecto_3"
               >
                 Calculadora
               </Link>
@@ -122,12 +125,12 @@ export default function Nav() {
               key="Lista"
               description="Lista de tareas con funcionalidades de agregar, eliminar y marcar como completada."
               startContent={icons.Lista1}
-              href="/proyectos/proyecto_4"
+              href="./proyectos/proyecto_4"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="/proyectos/proyecto_4"
+                href="./proyectos/proyecto_4"
               >
                 Lista
               </Link>
@@ -166,12 +169,12 @@ export default function Nav() {
               key="Webcats"
               description="Descripción personal de los miembros de Webcats."
               startContent={icons.Users}
-              href="/proyectos/proyecto_1"
+              href="./proyectos/proyecto_1"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="/proyectos/proyecto_1"
+                href="./proyectos/proyecto_1"
               >
                 Webcats
               </Link>
@@ -180,12 +183,12 @@ export default function Nav() {
               key="Contador"
               description="Contador de Clicks, con botones de incremento, decremento y reiniciar."
               startContent={icons.Cursor}
-              href="/proyectos/proyecto_2"
+              href="./proyectos/proyecto_2"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="/proyectos/proyecto_2"
+                href="./proyectos/proyecto_2"
               >
                 Contador
               </Link>
@@ -194,12 +197,12 @@ export default function Nav() {
               key="Calculadora"
               description="Simulación de una calculadora de operaciones básicas."
               startContent={icons.Calculadora}
-              href="/proyectos/proyecto_3"
+              href="./proyectos/proyecto_3"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="/proyectos/proyecto_3"
+                href="./proyectos/proyecto_3"
               >
                 Calculadora
               </Link>
@@ -208,12 +211,12 @@ export default function Nav() {
               key="Lista"
               description="Lista de tareas con funcionalidades de agregar, eliminar y marcar como completada."
               startContent={icons.Lista1}
-              href="/proyectos/proyecto_4"
+              href="./proyectos/proyecto_4"
             >
               <Link
                 color="foreground"
                 className="hover:text-orange-500"
-                href="/proyectos/proyecto_4"
+                href="./proyectos/proyecto_4"
               >
                 Lista
               </Link>
